@@ -19,8 +19,7 @@ The target variable is:
 
 The dataset contains information about 891 Titanic passengers.
 
-The variables used in the analysis include:
-
+The columns used include:
 - PassengerId
 - Survived
 - Pclass
@@ -118,24 +117,13 @@ The confusion matrix was:
 [[98 12]
  [23 46]]
  
- This represent                         | Actual Did Not Survive | Actual Survived |
-| ------------------------- | ---------------------: | --------------: |
-| Predicted Did Not Survive |                     98 |              23 |
-| Predicted Survived        |                     12 |              46 |
-
-| Metric    | Did Not Survive | Survived |
-| --------- | --------------: | -------: |
-| Precision |             81% |      79% |
-| Recall    |             89% |      67% |
-| F1-score  |             85% |      72% |
-
-
+Key Insight
+The strongest pattern observed in the dataset was the substantial difference in survival rates by sex.
+Female passengers had a survival rate of 74.20%, compared with only 18.89% for male passengers.
 Passenger class was also strongly associated with survival, with first-class passengers having a considerably higher survival rate than third-class passengers.
 
 🏁 Conclusion
-The analysis demonstrates that passenger characteristics such as sex, passenger class, age, and fare contain useful information for predicting Titanic survival. The Logistic Regression model achieved an accuracy of 80.45%, indicating reasonably good predictive performance on the test dataset. However, the model's 67% recall for survivors shows that accuracy alone does not provide a complete picture of model performance. The confusion matrix and classification metrics provide additional insight into the types of errors made by the model.
-
-These findings describe associations within the dataset and should not be interpreted as proof that any individual characteristic directly caused survival.
+The analysis demonstrates that passenger characteristics such as sex, passenger class, age, and fare contain useful information for predicting Titanic survival. The Logistic Regression model achieved an accuracy of 80.45%, indicating reasonably good predictive performance on the test dataset. The confusion matrix and classification metrics provide additional insight into the types of errors made by the model. These findings describe associations within the dataset and should not be interpreted as proof that any individual characteristic directly caused survival.
 
 🛠️ Tools and Technologies
 Python
