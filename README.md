@@ -117,11 +117,18 @@ The Logistic Regression model achieved an overall accuracy of:
 The confusion matrix was:
 [[98 12]
  [23 46]]
- Key Insight
+ 
+ This represent                         | Actual Did Not Survive | Actual Survived |
+| ------------------------- | ---------------------: | --------------: |
+| Predicted Did Not Survive |                     98 |              23 |
+| Predicted Survived        |                     12 |              46 |
 
-The strongest pattern observed in the dataset was the substantial difference in survival rates by sex.
+| Metric    | Did Not Survive | Survived |
+| --------- | --------------: | -------: |
+| Precision |             81% |      79% |
+| Recall    |             89% |      67% |
+| F1-score  |             85% |      72% |
 
-Female passengers had a survival rate of 74.20%, compared with only 18.89% for male passengers.
 
 Passenger class was also strongly associated with survival, with first-class passengers having a considerably higher survival rate than third-class passengers.
 
